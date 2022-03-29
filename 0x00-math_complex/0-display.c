@@ -14,13 +14,13 @@ void display_complex_number(complex c)
 		{
 			printf(" - ");
 			c.im = c.im * -1;
-			printf("%d", (int)c.im);
 		}
 		else
 		{
 			printf(" + ");
-			printf("%d", (int)c.im);
 		}
+		if (c.im != 1)
+			printf("%d", (int)c.im);
 		printf("i");
 	}
 	printf("\n");
